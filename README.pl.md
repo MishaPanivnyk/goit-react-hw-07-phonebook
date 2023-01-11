@@ -7,7 +7,7 @@ Ten projekt został stworzony przy pomocy
 zapoznania się z ustawieniami dodatkowych opcji
 [zobacz dokumentację](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## Przygotowanie nowego projektu
+## Przygotowanie nowego projektи
 
 1. Upewnij się, że na komputerze zainstalowana jest wersja LTS Node.js.
    [Ściągnij i zainstaluj](https://nodejs.org/en/), jeżeli trzeba.
