@@ -2,7 +2,7 @@ import ContactList from 'components/ContactList/ContactList';
 import Filter from 'components/Filter/Filter';
 import ContactForm from 'components/ContactForm/ContactForm';
 import {
-  getContacts,
+  selectContacts,
   selectError,
   selectIsLoading,
 } from 'redux/contacts/selectors';
@@ -11,14 +11,14 @@ import { Container, Title, SubTitle, Message } from 'components/App.styled';
 import { fetchContacts } from 'redux/operations';
 import { useEffect } from 'react';
 export default function App() {
-  const contacts = useSelector(getContacts);
+  const contacts = useSelector(selectContacts);
   const dispatch = useDispatch();
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
-
   useEffect(() => {
     dispatch(fetchContacts());
   }, [dispatch]);
+
   return (
     <Container>
       <Title>Phonebook</Title>
